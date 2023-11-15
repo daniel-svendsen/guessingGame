@@ -61,21 +61,21 @@ public class Guesser {
    */
   private String getReply() {
 
-    Scanner scan = new Scanner(System.in);
-      String reply;
-      reply = scan.nextLine();
-      if (reply.equals("T") || reply.equals("F")) {
-      } else {
-        System.out.println("Type mismatch - type T or F.");
-        scan.nextLine();
-      }
-      return reply;
-    
-    // Write code here which reads a String from the console.
-    // As long as it is not a valid reply (one of "T" and "F")
-    // write an error message, and read a new reply.
-    // When you have gotten a valid reply, return it.
+    //Scanner scan = new Scanner(System.in);
+    String reply;
+
+    reply = System.console().readLine();
+    while (!reply.equals("T") && !reply.equals("F")) {
+      System.out.println("Type mismatch - type T or F.");
+      reply = System.console().readLine();
+    }
+    return reply;
   }
+
+  // Write code here which reads a String from the console.
+  // As long as it is not a valid reply (one of "T" and "F")
+  // write an error message, and read a new reply.
+  // When you have gotten a valid reply, return it.
 
   private void doGuesses() {
     int i = 0; // number of guesses
