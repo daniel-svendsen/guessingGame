@@ -1,0 +1,15 @@
+När använder man add respektive commit?
+Add: När man vill lägga till en ändring i stagen för att ha i commiten.
+Commit: När man vill lägga till någon fil tillsammans med en kommentar om vad som ändrats.
+
+Vad är pull repektive push?
+Pull: När man vill uppdatera från githubs sida med de senaste ändringarna.
+Push: När man vill ladda upp sitt jobb till github.
+
+När använder man log respektive status?
+Log: För att se en lista över de senaste ändringarna och vad som gjorts.
+Status: För att se statusen om det finns några ändringar att adda eller commita.
+
+Vad är en Git branch och varför är de viktiga?
+En Git branch används för att göra ändringar på existerande filer utan att originalfilerna ändras.
+På så sätt kan man testa uppdateringar och göra ändringar utan att originalprogrammet behöver ändras innan.
